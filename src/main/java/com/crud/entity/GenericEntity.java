@@ -8,8 +8,4 @@ public class GenericEntity <ID>	{
 	public GenericEntity() {
 		super();
 	}
-	
-	
-	
-	
 }

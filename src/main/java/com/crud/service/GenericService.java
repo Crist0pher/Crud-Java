@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public class GenericService<ID, Model, Repository extends JpaRepository<Model, ID>> {
+public abstract class GenericService<ID, Model, Repository extends JpaRepository<Model, ID>> {
 
 	@Autowired
     protected Repository repository;
