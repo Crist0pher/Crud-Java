@@ -1,4 +1,4 @@
-package com.crud.service;
+package com.crud.generic;
 
 import java.util.List;
 import java.util.Optional;

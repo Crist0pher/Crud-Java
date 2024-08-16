@@ -1,4 +1,4 @@
-package com.crud.controller;
+package com.crud.generic;
 
 import java.util.Optional;
 
@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import com.crud.entity.GenericEntity;
-import com.crud.service.GenericService;
 
 public abstract class GenericController<ID, Model extends GenericEntity<ID>, Repository extends JpaRepository<Model, ID>, Service extends GenericService<ID, Model, Repository>> {
 
